@@ -71,7 +71,7 @@ public class Server {
                 out.println("Enter your Nickname : ");
                 nickname = in.readLine();
                 System.out.println(nickname + " joined successfully");
-                out.println("connected!, Use /quit -> To leave chat; /nick NewNickname -> To Change you nickname");
+                out.println("connected!, \nInstructions \n/quit -> To leave chat; \n/nick NewNickname -> To Change you nickname");
                 broadcast(nickname + " joined the chat");
                 while ((message = in.readLine()) != null) {
                     if (message.startsWith("/quit")) {
